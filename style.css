@@ -2,6 +2,11 @@
     font-family: Mukta-ExtraLight;
     src: url(assets/fonts/Mukta-ExtraLight.ttf);
 }
+@media (max-widtch: 768px) {
+    .section {
+        width: 100%;
+    }
+}
 body {
     font-family: 'AbrilFatface-Regular';
     display: flex;
@@ -28,8 +33,10 @@ html {
 }
 
 .main-conteiner {
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 15px; 
+    flex-wrap: wrap; 
 }
 .section {
     width: 50%;
@@ -38,19 +45,20 @@ html {
 #profile {
     text-align: center;
     margin-top: 80px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 #profile-title {
     text-align: center;
     margin-top: -230px;
-    margin-right: 600px;
+    margin-right: 300px;
     margin-bottom: 180px;
-    margin-left: 900px;
+    margin-left: 700px;
 }
 
 .nav-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    text-decoration: none;
     align-items: center;
     list-style: none;
     font-size: 19px;
@@ -67,7 +75,7 @@ html {
 
 #contacts {
     text-align: left;
-    margin-left: 400px;
+    margin-left: 300px;
     font-size: 20px;
     line-height: 1.5;
 }
@@ -75,8 +83,8 @@ html {
 #about-me {
     text-align: left;
     text-align: justify;
-    margin-top: -170px;
-    margin-left: 900px;
+    margin-top: -150px;
+    margin-left: 800px;
     width: 500px;
     height: 200px;
     font-size: 20px;
@@ -86,22 +94,22 @@ html {
 #skills {
     text-align: left;
     margin-top: 100px;
-    margin-left: 400px;
+    margin-left: 300px;
     font-size: 20px;
     line-height: 1.5;
 }
 
 #code-example {
     text-align: left;
-    margin-top: -190px;
-    margin-left: 900px;
+    margin-top: -180px;
+    margin-left: 800px;
     font-size: 20px;
 }
 
 #projects {
     text-align: left;
     margin-top: 100px;
-    margin-left: 400px;
+    margin-left: 300px;
     font-size: 20px;
     text-decoration: none;
 }
@@ -109,14 +117,14 @@ html {
 #education {
     text-align: left;
     margin-top: -100px;
-    margin-left: 900px;
+    margin-left: 800px;
     font-size: 20px;
 }
 
 #languages {
     text-align: left;
     margin-top: 100px;
-    margin-left: 400px;
+    margin-left: 300px;
     font-size: 20px;
     line-height: 1.5;
 }
@@ -128,10 +136,4 @@ footer {
     bottom: 0%;
     background-color:cadetblue;
     margin-top: 50px;
-}
-
-@media (max-widtch: 768px) {
-    .section {
-        width: 100%;
-    }
 }
